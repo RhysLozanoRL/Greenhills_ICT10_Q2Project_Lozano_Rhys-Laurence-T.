@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.2/core.css" />
+    <!-- PyScript JavaScript -->
+    <script type="module" src="https://pyscript.net/releases/2026.7.2/core.js"></script>
+    <title> Working with Set Dictionaries </title>
+ <title>Get to Know the Creator</title>
+
+    <style>
+        body {
+            background-image: url(https://i.pinimg.com/1200x/11/20/5a/11205ae1c7d9be81533d60ea5cbc0f96.jpg);
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #866439;
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #866439;
+        }
+
+        button {
+            background-color: #866439;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin: 25px auto;
+            padding: 20px;
+            width: 300px;
+            background-color: #bea483;
+            border-radius: 12px;
+            color: #866439;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Get to Know the Creator </h1>
+
+    <p>Discover a little more about the person behind this project!</p>
+
+    <button py-click="show_creator">Meet the Creator</button>
+
+    <div id="output"></div>
+
+    <py-script src="creator.py"></py-script>
+
+</body>
+</html>

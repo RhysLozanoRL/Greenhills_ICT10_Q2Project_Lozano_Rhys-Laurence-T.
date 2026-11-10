@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- PyScript CSS -->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.2/core.css" />
+    <!-- PyScript JavaScript -->
+        <script type="module" src="https://pyscript.net/releases/2026.7.2/core.js"></script>
+    <title>Main / Home Page</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: url(https://i.pinimg.com/1200x/73/55/b7/7355b7963c39f03385560abeea4c4955.jpg);
+            height: 120vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .welcome-box {
+            background: white;
+            width: 400px;
+            padding: 45px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #120531;
+            margin: 5px 0 10px;
+            font-size: 28px;
+        }
+
+        p {
+            color: #100a37;
+            font-size: 13px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .element-button {
+            background: linear-gradient(90deg, #1e9dab, #9bccd2);
+            color: white;
+        }
+
+        .club-button {
+            background: linear-gradient(90deg, #1e9dab, #9bccd2);
+            color: white;
+        }
+
+        .creator-button {
+            background: linear-gradient(90deg, #1e9dab, #9bccd2);
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 33px;
+            background: #1b5b64;
+            color: #ddd;
+            text-align: center;
+            padding: 9px;
+            font-size: 9px;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            padding: 12px;
+            margin: 10px;
+            border: 2px solid #1e9dab;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        input[type="button"] {
+            background-color: #1e9dab;
+            color: white;
+            padding: 12px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #1e9dab;
+        }
+
+
+        #result {
+            border: 2px solid #1e9dab;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px auto 0;
+            width: 280px;
+            min-height: 20px;
+            color: #165860;
+            text-align: center;
+            font-size: 16px;
+        }
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+    <div class="welcome-box">
+        <div class="icon">
+            🧪
+    </div>
+
+    <h1>
+        OBGH Science Club 
+    </h1>
+
+    <p>
+        Welcome to the science club's website ! Input your name to see if you've been accepted this school year '26 - '27
+    </p>
+
+<!-- Creates the buttons for the receipt & sku generator, it leads you to their webpages -->
+    <form> 
+        <input type="text" id="first_name" placeholder="Enter your first name"><br>
+        <input type="text" id="last_name" placeholder="Enter your last name"><br>
+        <input type="button" py-click="student_club" value="Search">
+    </form>
+
+    <div id="result"></div>
+
+    <p>
+        Check out other parts of our website too!
+    </p>
+    
+    <button class="element-button" onclick="location='element.html'">
+         Element Checker
+    </button>
+
+    <button class="club-button" onclick="location='ofcmemb.html'">
+         Official Club Members List
+    </button>
+
+    <button class="creator-button" onclick="location='creator.html'">
+         Meet The Creator
+    </button>
+
+     </div>
+        <div class="footer">
+            ♡ Skew — 1st Quarter Project - Lozano 10 - Topaz
+    </div>
+
+
+    <py-script src="clubmem.py"></py-script>
+
+
+
+</body>
+<!--Sources-->
+<!-- Python CSS: https://www.w3schools.com/css/
+ Used for reference with the Python CSS used throughout the whole project -->
+</html>
